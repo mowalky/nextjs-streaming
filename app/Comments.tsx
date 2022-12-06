@@ -8,7 +8,11 @@ async function Comments() {
 
   return (
     <div>
-      <ul></ul>
+      <ul>
+        {comments.map((comment) => (
+          <li key={comment}>{comment}</li>
+        ))}
+      </ul>
     </div>
   );
 }
